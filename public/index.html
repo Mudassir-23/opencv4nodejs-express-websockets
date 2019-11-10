@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <title>Express</title>
+  <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+  <h1>Express</h1>
+  <p>Welcome to Express</p>
+  <img name='live-stream' src="">
+  <img name='transformed-stream' src="">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.2.0/socket.io.js"></script>
+  <script>
+    const socket = io.connect('http://localhost:3000');
+    const liveStream = document.querySelector('img[name=live-stream]');
+    const transformedStream = document.querySelector('img[name=transformed-stream]');
+    socket.on('new-frame', (stream) => {
+      if(stream.live){
+        liveStream.src = `data:image/jpeg;base64,${stream.live}`;
+      }
+      else if(stream.transformed){
+        transformedStream.src = `data:image/jpeg;base64,${stream.transformed}`;
+      }   
+    });
+  </script>
+</body>
+</html>
