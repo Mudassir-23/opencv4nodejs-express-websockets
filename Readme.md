@@ -1,6 +1,6 @@
 # opencv4nodejs-express-websockets
 
-Boilerplate express app for getting started with opencv with nodejs and to live stream the video through websockets.
+Boilerplate express app for getting started on opencv with nodejs and to live stream the video through websockets.
 
 ## Getting Started
 
