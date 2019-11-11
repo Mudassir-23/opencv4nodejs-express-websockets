@@ -15,4 +15,4 @@ If you are having any trouble in installing opencv4nodejs package, refer to [ope
 
 * [Express](https://expressjs.com/) - web framework for nodejs
 * [SocketIO](https://socket.io/) - websocket implmentation library for nodejs
-* [opencv4nodejs](https://github.com/justadudewhohacks/opencv4nodejs) - nodejs bindings for opencv 3
+* [opencv4nodejs](https://github.com/justadudewhohacks/opencv4nodejs) - nodejs bindings for opencv
